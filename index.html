@@ -10,6 +10,7 @@
         body {
             font-size: 14px;
             font-family: '楷体';
+            background-color: rgba(112, 230, 220, 0.692);
         }
         
         #d1 {
@@ -25,11 +26,22 @@
             color: rgba(231, 130, 209, 0.692);
             font-size: 12px;
         }
+        
+        div:first-child {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 10%;
+            background-color: rgba(71, 197, 206, 0.596);
+        }
     </style>
 </head>
 
 <body>
-    <center>
+    <div>
         <p>Hello 大家好</p>
         <p>我是挽风，这是我的个人网站。 </p>
         <p>很高兴你来到这里</p>
@@ -37,7 +49,7 @@
         <p>我将会把网站逐渐建设的更好</p>
         <div id="d1"></div>
         <b><a href="demo.html">点&nbsp;击</a></b>
-    </center>
+    </div>
     <script>
         function time() {
             var date = new Date();
