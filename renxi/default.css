@@ -14,14 +14,14 @@ a {
 }
 
 #main {
-    width: 80%;
+    width: 100%;
 }
 
 #wrap {
     position: relative;
     margin: 0 auto;
-    width: 880px;
-    height: 544px;
+    width: 1100px;
+    height: 680px;
     margin-top: 10px;
 }
 
