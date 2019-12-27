@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>1号大作业</title>
+		<style type="text/css">
+			*{
+				margin: 0px;/*调整外边框距间距，简称外间距*/
+				padding: 0px;/*调整边框与边框内的字体的间距，简称内间距*/
+			}
+			#d0{
+				width: 780px;/*设置大盒子的宽与高*/
+			    height: 825px;
+				border: 5px solid cornflowerblue;/*设置5px的矢车菊蓝色实线条边框*/
+			}
+			#hedaer{
+				
+			}
+			#hedaer ul{
+			background-image: url(img/button1.jpg);/*设置导航栏的背景图片*/
+			width: 780px;/*设置导航栏的宽与高*/
+			height: 30px;
+			}
+			#hedaer ul li{
+				font-size: 14px;/*设置导航栏的字体大小*/
+				float: left;/*浮动：向左（可以理解为靠左的意思）*/
+				list-style-type: none;/*清楚导航栏文字左边的大黑点*/
+				padding: 5px 10px 5px 15px;	/*调整导航栏内字体与导航栏的间距*/	
+			}
+			#hedaer ul li a{
+				color: dodgerblue;/*设置导航栏的字体颜色*/
+			}
+			#banner1{
+				text-align: left;/*设置导航栏的文字向左靠齐*/
+				clear: left;/*清除：浮动向左*/
+				float: left;/*浮动：向左（可以理解为靠左的意思）*/
+				border: 1px solid cornflowerblue;/*设置1px的矢车菊蓝色实线条边框*/
+				width: 190px;/*设置左边小盒子的宽与高*/
+				height: 605px;		
+			}
+			#d2{
+		        width: 185px;/*设置左边天气查询部分小小盒子的宽与高*/
+			}
+			#p1{
+				height: 25px;/*设置左边天气查询部分字段的高*/
+				color: white;/*设置左边天气查询部分的字体颜色*/
+				font-size: 13px;/*设置左边天气查询部分小小盒子的字体大小*/		
+				padding: 20px 0px 0px 75px;/*设置左边天气查询部分的文字与边框的距离*/	
+			}
+			#d2 ul{
+			  margin-left: 5px;/*设置左边天气部分的外边框与大盒子的距离*/	
+			  padding: 10px 0px 0px 0px;/*设置左边天气部分的外边框与字体的距离*/
+			  background-color: cornflowerblue;	/*设置左边天气部分背景颜色*/
+			}
+			#d2 ul li{
+			  font-size: 10px;/*设置左边天气部分的字体大小*/
+			  padding: 1px 0px 1px 1px; /*设置左边天气部分的外边框与字体的距离*/
+			  list-style-type: none; /*清楚左边天气部分文字左边的大黑点*/ 
+			}
+			#d2 ul li a{
+				text-decoration: none;/*清楚左边天气部分文字下边的下划线*/ 
+				color: white;/*设置左边天气部分字体颜色*/
+			}
+			#p2{
+				color: darkblue;/*设置左边今日推荐部分字段的字体颜色*/
+				padding: 2px 0px 2px 1px;/*设置左边今日推荐部分的外边框与字体的距离*/
+				font-size: 14px;/*设置左边今日推荐部分字段的字体大小*/
+				background-color: lightblue;/*设置左边今日推荐部分背景颜色*/
+				margin-left: 5px;/*设置左边今日推荐部分的外边框与大盒子的距离*/	
+			}
+			#p3{
+				height: 405px;/*设置左边图片部分字段的字体颜色*/
+				margin-left: 5px;/*设置左边图片部分的外边框与大盒子的距离*/
+				padding: 10px 0px 15px 5px;/*设置左边图片部的外边框与字体的距离*/
+				background-color: cornflowerblue;/*设置左边图片部分背景颜色*/
+				color: white;/*设置左边图片部分字体颜色*/
+				font-size: 14px;/*设置左边图片部分的字体大小*/
+				text-align: center;/*设置左边图片部分的字体居中*/
+				
+			}
+			#p3 img{
+				border: 1px solid white;/*使左边图片拥有1px的白色实线边框*/
+				width: 160px;/*设置左边图片的宽与高*/
+				height: 110px;
+			}
+			#banner2{
+				float: left;
+				border: 1px solid cornflowerblue;
+				width: 400px;
+				height: 605px;
+			}
+			#banner2 img{
+				margin: 5px;
+			}
+			#i2{
+				text-align: left;
+			}
+			#banner2 p{
+				color: dodgerblue;
+				font-size:12px ;
+				padding: 0px 0px 10px 20px;
+			}
+			#banner3{
+				float: left;
+				width: 185px;
+				height: 601px;
+				border-left: 1px solid cornflowerblue;
+				border-top: 1px solid cornflowerblue;
+				border-bottom: 5px solid cornflowerblue;
+			}
+			#p4{
+				padding: 2px 0px 2px 5px;
+				font-size: 14px;
+				color: darkblue;
+				background-color: lightblue;
+				margin:5px 5px 0px 5px;
+			}
+			#p5{
+				margin-left:5px ;
+				width: 155px;
+				padding: 5px 10px 5px 10px;
+				background-color: cornflowerblue;
+			}
+			#p5 img{
+				border: 1px solid white;
+			}
+			#p6{
+				margin-left:5px ;
+				width: 170px;
+				padding: 2px 0px 2px 5px;
+				background-color: lightblue;
+				color: darkblue;
+				font-size: 14px;
+				}
+			#p7{
+				margin-left:5px ;
+				width: 170px;
+				padding: 2px 0px 2px 5px;
+				background-color: lightblue;
+				color: darkblue;
+				font-size: 14px;
+				}
+			#banner3 ul{
+				background-color: cornflowerblue;
+				margin: 0px 5px 0px 5px;
+				padding: 2px 5px 2px 5px;
+			}
+			#banner3 ul li{
+				list-style-type: none;
+				border-bottom: 1px dashed white;
+				font-size: 10px;
+				margin: 0px 10px 0px 10px;
+				color: white;
+				padding: 3px 5px 3px 5px;
+			}
+			
+			#banner3 ul li a{
+				color: white;
+				text-decoration: none;	
+			}
+			#footer{
+				margin: 5px 5px 5px 5px;
+				height: 20px;
+				border: 1px solid cornflowerblue;
+				float: left;
+				background-color: cornflowerblue;
+				width: 768px;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+		  <div id="d0">
+			 <div id="hedaer">
+				<img src="img/banner.jpg"/>
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">新疆简介</a></li>
+					<li><a href="#">风土人情</a></li>
+					<li><a href="#">吃在新疆</a></li>
+					<li><a href="#">路线选择</a></li>
+					<li><a href="#">自助行</a></li>
+					<li><a href="#">摄影摄像</a></li>
+					<li><a href="#">游记精选</a></li>
+					<li><a href="#">资源下载</a></li>
+					<li><a href="#">雁过留声</a></li>
+				</ul>
+			 </div>
+			<div id="banner1">
+			 <div id="d2">
+				<p id="p1" style="background-image: url(img/weather.jpg);"><b>天气查询</b></p>	
+				<hr style="margin-left:5px ;" />
+				<ul>
+					<li><img src="img/icon1.gif" /><a href="#">乌鲁木齐&emsp;雷阵雨&emsp;20C-31C</a></li>
+					<li><img src="img/icon1.gif" /><a href="#">吐鲁番&emsp;多云转阴&emsp;20C-28C</a></li>
+					<li><img src="img/icon1.gif" /><a href="#">喀什&emsp;阵雨转多云&emsp;25C-32C</a></li>
+					<li><img src="img/icon1.gif" /><a href="#">库尔勒&emsp;阵雨转阴&emsp;21C-28C</a></li>
+					<li><img src="img/icon1.gif" /><a href="#">克拉玛依&emsp;雷阵雨&emsp;26C-30C</a></li>
+				</ul>
+				<p id="p2">
+					<img src="img/icon2.gif"/>今日推荐
+				</p>
+				<p id="p3">
+					       <img src="img/tuijian1.jpg" alt="客纳斯河"/><span>客纳斯河</span>
+				           <img src="img/tuijian2.jpg" alt="布尔津"/><span>布尔津</span>
+				           <img src="img/tuijian3.jpg" alt="天山之路"/><span>天山之路</span>
+				</p>
+			 </div>
+		   </div>
+		   <div id="banner2" style="text-align: left;">
+		   	<img src="img/ghost.jpg" />
+		   	<img src="img/picture_h1.gif" /><br />
+		   	<img src="img/beauty1.jpg" style="border: 1px solid cornflowerblue;"/>
+		   	<img src="img/beauty2.jpg" style="border: 1px solid cornflowerblue;"/>
+		   	<img src="img/beauty3.jpg" style="border: 1px solid cornflowerblue;"/>
+		   	<img src="img/beauty4.jpg" style="border: 1px solid cornflowerblue;"/>
+		   	<img src="img/route_h1.gif" />
+		   	<p>
+		   	   <img src="img/icon1.gif" />吐鲁番--库尔勒--库车--塔中--和田--客什<br />
+		   	   <img src="img/icon1.gif" />乌鲁木齐--天池--克拉玛依--乌伦古湖--喀纳斯<br />
+		   	   <img src="img/icon1.gif" />乌鲁木齐--奎屯市--乔尔玛--那拉提--巴音布鲁克<br />
+		   	   <img src="img/icon1.gif" />乌鲁木齐--五彩城--将军隔壁--吉木萨尔
+		   	</p>
+		   </div>
+		   <div id="banner3" style="text-align: left;">
+		   	<p id="p4">
+		   		<img src="img/icon2.gif" /><b>新疆风光</b>
+		   	</p>
+		   	<p id="p5">
+		   		<img src="img/map1.jpg" />
+		   		<img src="img/map2.jpg" />
+		   	</p>
+		   	<p id="p6">
+		   		<img src="img/icon2.gif" /><b>小吃推荐</b>
+		   	</p>
+		   	<ul>
+		   		<li><img src="img/icon1.gif" /><a href="#">17号抓饭</a></li>
+		   		<li><img src="img/icon1.gif" /><a href="#">大盘鸡</a></li>
+		   		<li><img src="img/icon1.gif" /><a href="#">五一夜市</a></li>
+		   		<li><img src="img/icon1.gif" /><a href="#">水果</a></li>
+		   		<br />
+		   	</ul>
+		   	<p id="p7">
+		   		<img src="img/icon2.gif" /><b>宾馆酒店</b>
+		   	</p>
+		   	<ul>
+		   		<li><img src="img/icon1.gif" /><a href="#">美丽华大饭店</a></li>
+		   		<li><img src="img/icon1.gif" /><a href="#">海德大饭店</a></li>
+		   		<li><img src="img/icon1.gif" /><a href="#">银都大饭店</a></li>
+		   		<li><img src="img/icon1.gif" /><a href="#">鸿福大饭店</a></li>
+		   		<li><img src="img/icon1.gif" /><a href="#">友好大饭店</a></li>
+		   		<li><img src="img/icon1.gif" /><a href="#">棉麻宾馆</a></li>
+		   		<li><img src="img/icon1.gif" /><a href="#">电信宾馆</a></li>
+		   		<br />
+		   	</ul>
+		   	</p>
+		   </div>
+		   <div id="footer">  	
+		   	<p><center>艾萨克&copy;版权所有<font color="white">demo@demo.com</font></center></p>	   	
+		   </div>
+		  </div> 
+	    </center>
+	</body>
+</html>

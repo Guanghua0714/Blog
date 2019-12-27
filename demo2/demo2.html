@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>2号大作业</title>
+		<style type="text/css">/*内嵌css形式*/
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		#box0{
+			background-image: url(素材/body_bg.gif);/*设置大盒子的背景颜色*/
+			width: 750px;/*设置大盒子的宽与高*/
+			height: 658px;
+			
+		}
+		#box1{
+			width: 710px;/*设置左边小盒子的宽与高*/
+			height: 24px;
+			background-image: url(素材/body_t.gif);/*设置左边小盒子的背景图片*/
+		}
+		#i1{
+			width: 245px;/*设置左边小姐姐图片的宽与高*/
+			float: left;/*浮动：向左（可以理解为靠左的意思）*/
+			margin: 10px 5px 0px 5px;/*调整图片外边框与小盒子的距离*/
+		}
+		#i2{
+			clear: left;/*清除：浮动向左*/
+			float: left;/*浮动：向左（可以理解为靠左的意思）*/
+			margin: 0px 5px 0px 5px;/*调整图片外边框与小盒子的距离*/
+			z-index: 2px;/*强调图片优先显示的等级（这个可以不用去理解，因为这是我自学的）*/
+			width: 245px;/*设置左边白色英文字母图片的宽*/
+			position: absolute;
+			top: 423px;
+			left: 0px;
+			z-index: 2;	
+		}
+		#box1 p{
+			float: left;/*清除：浮动向左*/
+			clear: left;/*浮动：向左（可以理解为靠左的意思）*/
+			margin: 0px 0px 0px 5px;/*调整蓝色背景边框与小盒子的距离*/
+			background-image: url(素材/menu_bg.gif);/*设置左边小盒子的背景图片*/	
+			width: 245px;/*设置蓝色背景的宽与高*/
+			height: 175px;
+			position: absolute;/*调整，定位*/
+			top: 444px;/*调整，定位，使位置向下位移444px*/
+		}
+		#box1 ul{
+			border: 2px solid white;/*设置2px的天蓝色实线条边框*/
+			clear: left; /*清除：浮动向左*/
+			float: left;/*浮动：向左（可以理解为靠左的意思）*/
+			margin: 0px 0px 0px 20px;/*调整天蓝色实线条边框与小盒子的距离*/
+			padding: 2px 0px 0px 0px;/*调整天蓝色实线条边框内字体与边框的距离（简称调整内距）*/
+			position: absolute;/*调整，定位*/
+			top: 450px;/*调整，定位，使位置向下位移450px*/
+			z-index: 1;	/*强调图片优先显示的等级（这个可以不用去理解，因为这是我自学的）*/		
+		}
+		#box1 ul li{
+			border: 2px solid darkgray;/*设置2px的天蓝色实线条边框*/
+			text-align: left;/*文本向左靠齐*/
+			list-style-position: inside;
+			color: white;/*设置白色的字体颜色*/
+			background-image: url(素材/menu_b.gif);/*设置左边导航栏的背景图片*/
+			margin: 2px 2px 2px 2px;/*调整li的天蓝色实线条边框与ul的天蓝色实线条边框的距离*/
+			font-size: 12px;/*设置左边导航栏的字体大小*/	
+		}
+		#box1 ul li a{
+			color: white;/*设置白色的字体颜色*/	
+		}
+		#box2{
+			clear: left;
+			
+		}
+		#box2 ul{
+			height: 36px;
+			width: 450px;
+			background-image: url(素材/nav.gif);
+			position: absolute;
+			top: 25px;
+			left: 255px;
+			
+		}
+		#box2 ul li{
+			padding: 5px 17px 5px 17px;
+			list-style-type: none;
+			float: left;
+			border-left: 1px solid white;
+			font-size:16px ;
+		}
+		#box2 ul li a{
+			text-decoration: none;
+			color: white;
+		}
+		#p1{
+			clear: left;
+			width: 450px;
+			position: absolute;
+			left: 255px;
+			top: 106px;
+			border-bottom: 1px solid darkgray;
+			border-left: 1px solid darkgray;
+			border-right: 1px solid darkgray;
+			font-size: 12px;		
+		}
+		#i3{
+			clear: left;
+			width: 450px;
+			position: absolute;
+			left: 255px;
+			top: 80px;
+		}
+		#i4{
+			clear: left;
+			width: 450px;
+			position: absolute;
+			left: 255px;
+			top: 380px;
+		}
+		#p2{
+			clear: left;
+			width: 440px;
+			position: absolute;
+			left: 255px;
+			top: 410px;
+			border-bottom: 1px solid darkgray;
+			border-left: 1px solid darkgray;
+			border-right: 1px solid darkgray;
+			font-size: 12px;
+			padding: 5px;
+		}
+		#i4{
+			clear: left;
+			
+		}
+		#box3 p{
+			position: absolute;
+			top: 635px;
+			z-index: 2;
+		}
+		#i6{
+			position: absolute;
+			top: 645px;
+			z-index: 1;
+		}				
+		</style>
+	</head>
+	<body>
+		<div id="box0">
+			<div id="box1">
+				 <img src="素材/logo.jpg" id="i1" />
+				 <img src="素材/title_current_games.gif" id="i2" />
+				 <p>	
+				 	<ul>
+					<li><a href="#" style="text-decoration: none;">Golden Eye 007</a></li>
+					<li><a href="#" style="text-decoration: none;">Harry Potter &the Chamber of Seaet</a></li>
+					<li><a href="#" style="text-decoration: none;">Prince of Persia: Sands of Time</a></li>
+					<li><a href="#" style="text-decoration: none;">Resident Evil: Cade Veronica X</a></li>
+					<li><a href="#" style="text-decoration: none;">The Legend of Zelda: Majora's Mask</a></li>
+					<li><a href="#" style="text-decoration: none;">Tomb Raider: The Lost Artifact </a></li>
+					<li style="list-style-type: none;"><a href="#" style="padding-left: 110px;">More Games</a></li>
+				  </ul>
+				 </p> 
+			</div>
+			<div id="box2">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Reviews</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Community</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<img src="素材/title_video_games.gif" id="i3" />
+				<p id="p1">	
+				<br />	
+				&emsp;Nintendo Ds<br /><br />
+                <font color="darkgray">&emsp;Don't forgot to check free website. templates every<br />
+                &emsp;ay, because we add at least one free websitete<br />
+                &emsp;mplate daily.<br />
+                &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<a href="#" style="color: darkgray;">more</a>
+				</font>
+				<img src="素材/picture_1.jpg" style="position: absolute; top: 10px;" />
+				<br /><br />
+				&emsp;NYKO Air Flo XL. Controller<br /><br />
+                <font color="darkgray">
+                &emsp;This is a template designed by free website templates<br />
+                &emsp;for you for free you can replace all the text by your<br />
+                &emsp;own text. This is just a place holder 50 you can see<br />
+                &emsp;how the sitewould look like.<br />
+                </font>
+                &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<a href="#" style="color: darkgray;">more</a>
+				<img src="素材/picture_2.jpg" style="position: absolute; top: 130px;" />
+				<br /><br />		
+				</p>
+				<img src="素材/title_most_popular.gif" id="i4" />
+				<p id="p2">
+				<br />
+				<img src="素材/picture_3.jpg" align="left"/>		
+				&emsp;Urban Preditor<br /><br />
+				<font color="darkgray">
+                &emsp;If you're loking for beautiful and professinally made templates<br/>
+                &emsp;you can find them at Template. Beauty.<br/>
+                &emsp;If you're looking for beautiful and professionally made templates<br/>
+                you can find them at <a href="#" style="color: darkgray;">template Beauty.</a><br/>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="#" style="color: darkgray;">Download now</a>
+                </font>
+                <img src="素材/picture_4.jpg" align="left"/>	
+				&emsp;&emsp;Xtreme War Session<br/>
+				<font color="darkgray">
+				&emsp;&emsp;To find great hosting providers visit Web <a href="#" style="color: darkgray;">Hosting Zoom</a><br/>
+				&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="#" style="color: darkgray;">Download now</a>
+				</font>
+				</p>
+			</div>
+			<div id="box3">
+				<p>
+					<font color="darkgray" size="2">
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&copy;copyright information goes here
+			        </font>
+				</p>
+				<img src="素材/body_b.gif" id="i6" />
+			</div>
+		</div>
+	</body>
+</html>
