@@ -7,7 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style type="text/css">
-
+        body {
+            font-size: 22px;
+            font-family: '楷体';
+        }
+        
+        #d1 {
+            display: block;
+            height: 20px;
+            width: auto;
+            padding: 5px;
+            margin: 5px;
+        }
     </style>
 </head>
 
@@ -23,7 +34,7 @@
     </center>
     <script>
         function time() {
-            var date = new DaTe();
+            var date = new Date();
             var month = date.getMonth() > 10 ? date.getMonth() : '0' + date.getMonth();
             var day = date.getDate() > 10 ? date.getDate() : '0' + date.getDate();
             var hours = date.getHours() > 10 ? date.getHours() : '0' + date.getHours();
@@ -33,7 +44,7 @@
             document.getElementById('d1').innerHTML = str;
 
         }
-        setInterval(time, 1000);
+        setInterval(time, 500);
     </script>
 </body>
 
