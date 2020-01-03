@@ -46,7 +46,6 @@
         <p>我是挽风，这是我的个人网站。 </p>
         <p>很高兴你来到这里</p>
         <p>创建时间：2019-12-27-12：00</p>
-        <p>我将会把网站逐渐建设的更好</p>
         <div id="d1"></div>
         <a href="demo.html">点&nbsp;击</a>
         <a href="demo2/demo1.html">网页1</a>
@@ -55,7 +54,7 @@
     <script>
         function time() {
             var date = new Date();
-            var month = date.getMonth() > 10 ? date.getMonth() : '0' + date.getMonth();
+            var month = date.getMonth() > 10 ? date.getMonth() : '0' + (date.getMonth() + 1);
             var day = date.getDate() > 10 ? date.getDate() : '0' + date.getDate();
             var hours = date.getHours() > 10 ? date.getHours() : '0' + date.getHours();
             var minutes = date.getMinutes() > 10 ? date.getMinutes() : '0' + date.getMinutes();
